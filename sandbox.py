@@ -1,7 +1,25 @@
-name = ""
-while name != "xxx":
-    who = input("Who are you?")
-    print(f"Hi {who}")
+import random
 
-    print()
-    print("we are done")
+STARTING_BALANCE = 100
+
+balance = STARTING_BALANCE
+
+for item in range(0, 10):
+    chosen_num = random.randint(1, 100)
+
+    if 1 <= chosen_num <= 5:
+        chosen = "unicorn"
+        balance += 4
+    elif 6 <= chosen_num <= 36:
+        chosen = "donkey"
+        balance -= 1
+    else:
+        if chosen_num % 2 == 0:
+            chosen = "horse"
+        else:
+            chosen = "zebra"
+
+
+    print("Starting Balance: ${:.2f}".format(STARTING_BALANCE))
+    print("Final Balance: ${:.2f}".format(balance))
+print()
