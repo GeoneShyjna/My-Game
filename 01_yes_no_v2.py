@@ -3,9 +3,7 @@ while show_instruction.lower() != "xxx":
     # ask the user if they have played before
       show_instruction = input("Have you played this game before?").lower()
 
-    # if they say yes, output 'program continues'
-    # if they say no, output ' display instructions'
-    # if the answer is invalid, print an error
+
 
      if show_instruction == "yes" or show_instruction == "y":
        show_instruction = "yes"

@@ -19,7 +19,6 @@ for item in range(0, 10):
         else:
             chosen = "zebra"
 
-
     print("Starting Balance: ${:.2f}".format(STARTING_BALANCE))
     print("Final Balance: ${:.2f}".format(balance))
 print()
