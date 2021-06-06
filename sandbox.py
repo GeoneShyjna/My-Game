@@ -1,24 +1,10 @@
-import random
+greeting = "hello world"
+sides = "*" * 3
 
-STARTING_BALANCE = 100
+greeting = "{} {} {}". format(sides, greeting, sides)
 
-balance = STARTING_BALANCE
+top_bottom = "*" * len(greeting)
 
-for item in range(0, 10):
-    chosen_num = random.randint(1, 100)
-
-    if 1 <= chosen_num <= 5:
-        chosen = "unicorn"
-        balance += 4
-    elif 6 <= chosen_num <= 36:
-        chosen = "donkey"
-        balance -= 1
-    else:
-        if chosen_num % 2 == 0:
-            chosen = "horse"
-        else:
-            chosen = "zebra"
-
-    print("Starting Balance: ${:.2f}".format(STARTING_BALANCE))
-    print("Final Balance: ${:.2f}".format(balance))
-print()
+print(top_bottom)
+print(greeting)
+print(top_bottom)

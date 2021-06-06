@@ -17,6 +17,6 @@ for item in range(0, 500):
     else:
         balance -= 0.5
 
-    print()
-    print("Starting Balance: ${:.2f}".format(STARTING_BALANCE))
-    print("Final Balance: ${:.2f}".format(balance))
+    print("You got a {}. Your balance is ${:.2f}".format(chosen, balance))
+
+print()
