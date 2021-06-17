@@ -22,11 +22,8 @@ show_instructions = yes_no("Have you played this game before?")
 
 print("you chose {}".format(show_instructions))
 print()
-having_fun = yes_no("Are you having fun?")
-print("you said {} to having fun".format(having_fun))
 
 
-# Integer checking function
 def intcheck(question, low, high):
     valid = False
     while not valid:
@@ -54,7 +51,6 @@ print("\tHorse or Zebra: $0.50")
 print("\tDonkey: $0.00")
 print()
 
-
 UNICORN_PAYOUT = 5
 HORSE_ZEBRA_PAYOUT = 0.5
 GAME_FEE = 1
@@ -75,12 +71,12 @@ while not keep_playing:
     print("You got a {}".format(token))
     print("--------------------------------")
 
-    # Adjust user_balance correctly for given token
     if token == "unicorn":
-        user_balance += UNICORN_PAYOUT - GAME_FEE  # Wins $5 less $1 playing fee
+        user_balance += UNICORN_PAYOUT - GAME_FEE
         print("Congratulations. You won ${:.2f}".format(UNICORN_PAYOUT))
+
     elif token == "horse" or token == "zebra":
-        user_balance += HORSE_ZEBRA_PAYOUT - GAME_FEE  # Wins $0.50c less $1 playing fee
+        user_balance += HORSE_ZEBRA_PAYOUT - GAME_FEE
         print("Congratulations. You won ${:.2f}".format(HORSE_ZEBRA_PAYOUT))
     else:
         user_balance -= GAME_FEE
@@ -92,6 +88,5 @@ while not keep_playing:
     else:
         print("You ran out of money")
         keep_playing = "xxx"
-
 
 print("\nYou are leaving with a balance of ${:.2f}\nThanks for playing. Goodbye".format(user_balance))
