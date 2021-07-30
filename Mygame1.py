@@ -1,21 +1,47 @@
-def main():
-    qs = {'sein ': 'to be', 'haben ': 'to have', 'werden ': 'to become', 'sagen ': 'to say', 'geben ': 'to give'}
-    print("*** Quiz ***\n")
-    name = input("Please enter your name: ").title()
-    print()
-    print("\nWell done {0}, you scored {1} out of {2}.".format(name, quiz(qs), len(qs)))
 
+# LEVEL 1 #
+l1 = 2
+while l1 == 2:
+    Level_1 = input("Level 1\n"
+                    "Choose a door\n"
+                    "**DOOR 1**\t**DOOR 2**\t**DOOR 3**\n")
 
-def quiz(qs):
-    score = 0
-    for q, a in qs.items():
-        if input(q).lower() == a.lower():
-            score += 1
-            print("Correct.")
-        else:
-            print("Sorry, correct answer is \"{}\".".format(a))
-            return score
+    if Level_1 == "DOOR1" or Level_1 == "1":
+        print("You passed this level on to the next level!\n")
+        l1 = 1
+    elif Level_1 == "DOOR2 " or Level_1 == "2":
+        print("\n***YOU DIED***")
+        quit()
 
+    elif Level_1 == "DOOR3 " or Level_1 == "3":
+        print("\n***YOU DIED***")
+        quit()
 
-if __name__ == "__main__":
-    main()
+    else:
+        print("Please answer the question!{}\n"
+              "\n**ANSWER HAVE TO BE IN CAPITALS AND NO SPACE \nOR JUST THE NUMBER**")
+        print()
+
+# LEVEL 2 #
+l2 = 2
+while l2 == 2:
+    Level_2 = input("level 2 \n"
+                    "Choose a door\n"
+                    "**DOOR 1**\t**DOOR 2**\t**DOOR 3**\n")
+
+    if Level_2 == "DOOR1" or Level_2 == "1":
+        print("\n***YOU DIED***")
+        quit()
+
+    elif Level_2 == "DOOR2 " or Level_2 == "2":
+        print("\n***YOU DIED***")
+        quit()
+
+    elif Level_2 == "DOOR3 " or Level_2 == "3":
+        print("You passed this level on to the next level!")
+        l1 = 1
+        quit()
+
+    else:
+        print("Please answer the question"
+              "\n**ANSWER HAVE TO BE IN CAPITAL AND NO SPACE \nOR JUST THE NUMBER**")
