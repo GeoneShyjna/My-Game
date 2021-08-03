@@ -45,8 +45,16 @@ while l2 == 2:
     elif Level_2 == "DOOR3 " or Level_2 == "3":
         print("You passed this level on to the next level!")
         l1 = 1
-        quit()
 
     else:
         print("Please answer the question {}!"
               "\n**ANSWER HAVE TO BE IN CAPITAL AND NO SPACE \nOR JUST THE NUMBER**".format(name))
+
+print("Well *NAME* you passed the door maze,\n"
+      "This level is puzzles they wont be hard or easy,\n"
+      "so write the answer you know.\n"
+      "**ONE IMPORTANT THING IF YOU GET IT WRONG YOU ARE DEAD**")
+
+P2 = 2
+while P2 == 2:
+    Puzzle_1 = input("Hello There!")
