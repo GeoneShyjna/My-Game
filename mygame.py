@@ -3,7 +3,7 @@ name = input("What is your name?\n")
 print("Hi", name, "you are stuck in a maze,\n"
                   "there is multiple doors in the maze\n"
                   "but you can only choose one door\n"
-                  "**ANSWER HAVE TO BE IN CAPITALS AND NO SPACE\n"
+                  "**ANSWERS HAVE TO BE IN CAPITALS AND NO SPACE\n"
                   "OR JUST THE NUMBER**\n")
 # LEVEL 1 #
 l1 = 2
@@ -28,43 +28,41 @@ while l1 == 2:
               "\n**ANSWER HAVE TO BE IN CAPITALS AND NO SPACE \nOR JUST THE NUMBER**".format(name))
 
 # LEVEL 2 #
+
 l2 = 2
 while l2 == 2:
     Level_2 = input("level 2 \n"
                     "Choose a door\n"
                     "**DOOR 1**\t**DOOR 2**\t**DOOR 3**\n")
-
-    if Level_2 == "DOOR1" or Level_2 == "1":
-        print("\n***YOU DIED***")
-        quit()
-
+    if Level_2 == "DOOR3" or Level_2 == "3":
+        print("You passes this level on to the next level!")
+        l2 = 1
     elif Level_2 == "DOOR2 " or Level_2 == "2":
         print("\n***YOU DIED***")
         quit()
 
-    elif Level_2 == "DOOR3 " or Level_2 == "3":
-        print("You passed this level on to the next level!")
-        l1 = 1
+    elif Level_2 == "DOOR1 " or Level_2 == "1":
+        print("\n***YOU DIED***")
+        quit()
 
     else:
         print("Please answer the question {}!"
               "\n**ANSWER HAVE TO BE IN CAPITAL AND NO SPACE \nOR JUST THE NUMBER**".format(name))
 
+print("\nWell", name, "you passed the door maze,\n"
+                      "This level is puzzles they wont be hard or easy,\n"
+                      "so write the answer you know.\n"
 
-print("Well *NAME* you passed the door maze,\n"
-      "This level is puzzles they wont be hard or easy,\n"
-      "so write the answer you know.\n"
-      
-      "**ONE IMPORTANT THING IF YOU GET IT WRONG YOU ARE DEAD**\n"
-      "**ANSWERS MUST BE IN CAPITALS\n")
+                      "**ONE IMPORTANT THING IF YOU GET IT WRONG YOU ARE DEAD**\n"
+                      "**ANSWERS MUST BE IN CAPITALS\n")
 l1 = 2
 while l1 == 2:
     P_1 = input("Level 3 \n"
                 "What is 2+2 \n")
 
     if P_1 == "FOUR" or P_1 == "4":
-        print("You passed this level on to the next level!\n"
-              "THE CODE IS 68")
+        print("THE CODE IS 68\n"
+              "You passed this level on to the next level!\n")
         l1 = 1
 
     else:
@@ -77,8 +75,8 @@ while l1 == 2:
                 "What is 1+1 \n")
 
     if P_2 == "TWO" or P_2 == "2":
-        print("You passed this level on to the next level!\n"
-              "THE CODE IS 78")
+        print("THE CODE IS 78\n"
+              "You passed this level on to the next level!\n")
         l1 = 1
 
     else:
