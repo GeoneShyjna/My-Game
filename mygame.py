@@ -82,3 +82,25 @@ while l1 == 2:
     else:
         print("Please answer the question {}!\n"
               "\n**ANSWER HAVE TO BE IN CAPITALS\nOR JUST THE NUMBER**".format(name))
+
+l4 = 2
+while l4 == 2:
+    Level_4 = input("Level 5 \n"
+                    "Choose a door\n"
+                    "**DOOR 1**\t**DOOR 2**\t**DOOR 3**\n")
+
+    if Level_4 == "DOOR1" or Level_4 == "1":
+        print("You passed this level on to the next level!\n")
+        l4 = 1
+
+    elif Level_4 == "DOOR2" or Level_4 == "2":
+        print("\n***YOU DIED***")
+        quit()
+
+    elif Level_4 == "DOOR3" or Level_4 == "3":
+        print("\n***YOU DIED***")
+        quit()
+
+    else:
+        print("Please answer the question {}!\n"
+              "\n**ANSWER HAVE TO BE IN CAPITALS AND NO SPACE \nOR JUST THE NUMBER**".format(name))
