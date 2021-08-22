@@ -7,9 +7,13 @@ def dead():
           "GUESS YOU WILL JOIN THOSE DEAD BODY'S. WAIT HOLD ON!\n")
 
 
-name = input("What is your name?\n")
-# Here the user is asked to enter the name first
+def wrong():
+    print("Please answer the question {}!\n"
+          "\n**ANSWER HAVE TO BE IN CAPITALS AND NO SPACE "
+          "\nOR JUST THE NUMBER**\n".format(name))
 
+
+name = input("What is your name?\n")
 
 print()
 print("HI", name, "I'M YOUR VIRTUAL BOT, YOU CAN CALL ME A BOT, IN A NICE WAY (¬_¬ ).\n"
@@ -21,7 +25,6 @@ print("So", name, "you are stuck in a maze,\n"
                   "but you can only choose one door\n"
                   "**ANSWERS HAVE TO BE IN CAPITALS AND NO SPACE\n"
                   "OR JUST THE NUMBER**\n")
-
 l1 = 2
 while l1 == 2:
     Level_1 = input("Level 1\n"
@@ -48,14 +51,13 @@ while l1 == 2:
         quit()
 
     else:
-        print("Please answer the question {}!\n"
-              "\n**ANSWER HAVE TO BE IN CAPITALS AND NO SPACE \nOR JUST THE NUMBER**".format(name))
+        wrong()
 
 l2 = 2
 while l2 == 2:
     Level_2 = input("Level 2\n"
                     "Choose a door to survive\n"
-                    "*Behind Door 1 there is a smiling lion*\n"
+                    "*Behind Door 1 there is a laughing lion*\n"
                     "*Behind Door 2 there is sky high mountain which is impossible to climb*\n"
                     "*Behind Door 3 there is a group of whale sharks*\n"
                     "TRUST ME YOU ARE DONE {}, PICK A DOOR.\n".format(name))
@@ -79,9 +81,7 @@ while l2 == 2:
         quit()
 
     else:
-        print("Please answer the question {}!\n"
-              "**ANSWER HAVE TO BE IN CAPITAL AND NO SPACE\n"
-              "OR JUST THE NUMBER**\n".format(name))
+        wrong()
 
 print("WELL", name, "I THINK YOU HAD A NICE SWIM.\n"
                     "THIS IS NOT THE END", name, "THERE IS MORE, HAHAHAHA (EVIL LAUGH) DID IT WORK,ARE YOU SCARED NOW\n"
@@ -101,9 +101,8 @@ while l1 == 2:
         l1 = 1
 
     else:
-        print("Please answer the question {}!\n"
-              "BRUH DO YOUR MATH RIGHT. LET ME TALK TO YOUR MATH TEACHER\n"
-              "*ANSWER HAVE TO BE IN CAPITALS\nOR JUST THE NUMBER**".format(name))
+        print("BRUH DO YOUR MATH RIGHT. LET ME TALK TO YOUR MATH TEACHER\n")
+        wrong()
 
 l1 = 2
 while l1 == 2:
@@ -111,7 +110,7 @@ while l1 == 2:
                 "Peter was born in March but his birthday was on April\n"
                 "So which city was peter born in\n")
 
-    if P_2 == "MARCH" or P_2 == "march":
+    if P_2 == "MARCH".lower():
         print("***THE CODE IS 78***\n"
               "I THINK THERE IS CITY CALLED MARCH NOW\n"
               "TOTALLY I DIDN'T MADE THAT UP\n"
@@ -120,9 +119,8 @@ while l1 == 2:
 
     else:
         print("*SIGH*, READ THE QUESTION AGAIN\n"
-              "Please answer the question {}!\n"
-              "**ANSWER IS WRONG\n"
-              "*HINT ITS A WORD STARTS WITH M*\n".format(name))
+              "*HINT ITS A WORD STARTS WITH M*\n"
+              "**{} ANSWER THE QUESTION.**\n".format(name))
 
 os.system("cls")
 
@@ -153,8 +151,7 @@ while l4 == 2:
         quit()
 
     else:
-        print("Please answer the question {}!\n"
-              "\n**ANSWER HAVE TO BE IN CAPITALS AND NO SPACE \nOR JUST THE NUMBER**".format(name))
+        wrong()
 
 print("HEY {} THIS IS THE LAST LEVEL, YOU MADE IT.\n"
       "BUT WAIT THERE IS A GATE WHAT WAS THE CODE.\n"
@@ -169,12 +166,11 @@ while l1 == 2:
         print("OH MY GOD WHAT'S HAPPENING, I THINK YOU FAILED....SORRY GOODBYE!\n"
               "JUST KIDDING YOU WON, YOU SURVIVED THE JUNGLE MAZE. WELL DONE {}!"
               "YOU BEATEN THE GAME, NO WE DEFEATED IT AS A FAMILY.\n"
-              "YO WHAT'S HAPPENING...., IS THAT DOM TORETTO, DID ANYONE SAY FAMILY\n"              
+              "YO WHAT'S HAPPENING...., IS THAT DOM TORETTO, DID ANYONE SAY FAMILY\n"
               "⊙﹏⊙∥....AHHHH".format(name))
 
     l1 = 1
 
 else:
-    print("I THINK YOU ARE STUCK WITH ME. LET'S GO, YOU KNOW YOU AND ME AGAIN LIKE IN THE BEGINNING"
-          "Please answer the question {}!\n"
-          "**ANSWER HAVE TO BE JUST THE NUMBER**\n".format(name))
+    print("I THINK YOU ARE STUCK WITH ME. LET'S GO, YOU KNOW YOU AND ME AGAIN LIKE IN THE BEGINNING\n")
+    wrong()
