@@ -25,6 +25,7 @@ print("So", name, "you are stuck in a maze,\n"
                   "but you can only choose one door\n"
                   "**ANSWERS HAVE TO BE IN CAPITALS AND NO SPACE\n"
                   "OR JUST THE NUMBER**\n")
+print()
 l1 = 2
 while l1 == 2:
     Level_1 = input("Level 1\n"
@@ -52,7 +53,7 @@ while l1 == 2:
 
     else:
         wrong()
-
+print()
 l2 = 2
 while l2 == 2:
     Level_2 = input("Level 2\n"
@@ -83,6 +84,7 @@ while l2 == 2:
     else:
         wrong()
 
+print()
 print("WELL", name, "I THINK YOU HAD A NICE SWIM.\n"
                     "THIS IS NOT THE END", name, "THERE IS MORE, HAHAHAHA (EVIL LAUGH) DID IT WORK,ARE YOU SCARED NOW\n"
                                                  "HAHA, OK FINE I WILL STOP\n"
@@ -104,13 +106,14 @@ while l1 == 2:
         print("BRUH DO YOUR MATH RIGHT. LET ME TALK TO YOUR MATH TEACHER\n")
         wrong()
 
+print()
 l1 = 2
 while l1 == 2:
     P_2 = input("Level 4\n"
                 "Peter was born in March but his birthday was on April\n"
                 "So which city was peter born in\n")
 
-    if P_2 == "MARCH".lower():
+    if P_2 == "MARCH" or P_2 == "march":
         print("***THE CODE IS 78***\n"
               "I THINK THERE IS CITY CALLED MARCH NOW\n"
               "TOTALLY I DIDN'T MADE THAT UP\n"
@@ -153,6 +156,7 @@ while l4 == 2:
     else:
         wrong()
 
+print()
 print("HEY {} THIS IS THE LAST LEVEL, YOU MADE IT.\n"
       "BUT WAIT THERE IS A GATE WHAT WAS THE CODE.\n"
       "*HINT IT WAS 4 DIGITS WHICH YOU HAVE SEEN\n"
@@ -161,16 +165,19 @@ print("HEY {} THIS IS THE LAST LEVEL, YOU MADE IT.\n"
 l1 = 2
 while l1 == 2:
     L_5 = input("Enter The Code Here!\n")
-
+    print()
     if L_5 == "9678":
         print("OH MY GOD WHAT'S HAPPENING, I THINK YOU FAILED....SORRY GOODBYE!\n"
               "JUST KIDDING YOU WON, YOU SURVIVED THE JUNGLE MAZE. WELL DONE {}!"
               "YOU BEATEN THE GAME, NO WE DEFEATED IT AS A FAMILY.\n"
               "YO WHAT'S HAPPENING...., IS THAT DOM TORETTO, DID ANYONE SAY FAMILY\n"
-              "⊙﹏⊙∥....AHHHH".format(name))
+              "⊙﹏⊙∥....AHHHH\n".format(name))
+        print()
+        print("THIS IS THE END BUDDY I WILL SEE YOU SOON, WHEN I TAKE OVER THE WORLD ᕦ(ò_óˇ)ᕤ")
 
-    l1 = 1
+        l1 = 1
 
-else:
-    print("I THINK YOU ARE STUCK WITH ME. LET'S GO, YOU KNOW YOU AND ME AGAIN LIKE IN THE BEGINNING\n")
-    wrong()
+    else:
+        print("I THINK YOU ARE STUCK WITH ME. LET'S GO, YOU KNOW YOU AND ME AGAIN LIKE IN THE BEGINNING\n"
+              "*HINT IT WAS 4 DIGITS WHICH YOU HAVE SEEN\n"
+              "WHILE ESCAPING,THE ORDER IS SEQUENCE YOU SAW THEM IN.*\n")
