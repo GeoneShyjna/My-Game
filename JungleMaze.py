@@ -20,7 +20,8 @@ name = input("What is your name?\n")
 
 print()
 # The Bot's Introduction
-print("HI", name, "I'M YOUR VIRTUAL BOT AND I CREATED THIS MAZE. YOU CAN CALL ME A BOT, IN A NICE WAY (¬_¬ ).\n"
+print("HI", name, "I'M YOUR VIRTUAL BOT AND I CREATED THIS MAZE CALLED THE JUNGLE MAZE.\n"
+                  " YOU CAN CALL ME A BOT, IN A NICE WAY (¬_¬ ).\n"
                   "I WILL HELP YOU WITH YOUR JOURNEY IN THE MAZE.\n"
                   "INSTRUCTION WILL BE SEEN BELOW THIS.\n")
 print()
@@ -31,6 +32,7 @@ print("So", name, "you are stuck in a maze,\n"
                   "**ANSWERS HAVE TO BE IN CAPITALS AND NO SPACE\n"
                   "OR JUST THE NUMBER**\n")
 print()
+
 l1 = 2
 # Level 1 starts
 while l1 == 2:
@@ -90,7 +92,7 @@ while l2 == 2:  # Level 2 starts
     else:
         wrong()
 
-os.system("cls")  # This Is Here Because They Are Moving Into Another Stage
+print()
 print()
 print("WELL", name, "I THINK YOU HAD A NICE SWIM.\n"  # Moving Into The Next Section
                     "THIS IS NOT THE END", name, "THERE IS MORE, HAHAHAHA (EVIL LAUGH) DID IT WORK,ARE YOU SCARED NOW\n"
@@ -131,6 +133,9 @@ while l1 == 2:
         print("*SIGH*, READ THE QUESTION AGAIN\n"
               "*HINT ITS A WORD STARTS WITH M*\n"         # This Question Might Be Hard So Gave Them Hints
               "**{} ANSWER THE QUESTION.**\n".format(name))
+
+input("ARE YOU READY MY GUY WE ARE ALMOST THERE!\n"
+      "Press Enter To Continue\n")
 
 os.system("cls")
 # This Clears The Answer on the Top. So They Don't Go Back And Look For The Code Again
