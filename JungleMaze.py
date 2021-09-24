@@ -21,7 +21,7 @@ name = input("What is your name?\n")
 print()
 # The Bot's Introduction
 print("HI", name, "I'M YOUR VIRTUAL BOT AND I CREATED THIS MAZE CALLED THE JUNGLE MAZE.\n"
-                  " YOU CAN CALL ME A BOT, IN A NICE WAY (¬_¬ ).\n"
+                  "YOU CAN CALL ME A BOT, IN A NICE WAY (¬_¬ ).\n"
                   "I WILL HELP YOU WITH YOUR JOURNEY IN THE MAZE.\n"
                   "INSTRUCTION WILL BE SEEN BELOW THIS.\n")
 print()
